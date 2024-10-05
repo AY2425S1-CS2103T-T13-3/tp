@@ -2,11 +2,16 @@ package seedu.address.model.person;
 
 import static java.util.Objects.requireNonNull;
 
+/**
+ * Represents a Person's remark in the address book.
+ * Guarantees: immutable; is valid as declared in {@link #isValidRemark(String)}
+ */
 public class Remark {
-    public final String value;
     public static final String VALIDATION_REGEX = "[\\\\p{Alnum}][\\\\p{Alnum} ]*";
     public static final String MESSAGE_CONSTRAINTS = "Remarks should only contain alphanumeric characters and spaces, "
-            + "and it should not be blank";
+        + "and it should not be blank";
+
+    public final String value;
 
     /**
      * Constructs an {@code Remark}.
