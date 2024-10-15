@@ -54,6 +54,7 @@ public class AddressBookParser {
         switch (commandWord) {
 
         case AddCommand.COMMAND_WORD:
+            System.out.println(arguments);
             return new AddCommandParser().parse(arguments);
 
         case EditCommand.COMMAND_WORD:

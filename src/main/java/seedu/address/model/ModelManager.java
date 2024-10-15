@@ -11,6 +11,7 @@ import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import seedu.address.commons.core.GuiSettings;
 import seedu.address.commons.core.LogsCenter;
+import seedu.address.model.owner.Owner;
 import seedu.address.model.person.Person;
 
 /**
@@ -94,6 +95,12 @@ public class ModelManager implements Model {
     }
 
     @Override
+    public boolean hasOwner(Owner person) {
+        requireNonNull(person);
+        return addressBook.hasOwner(person);
+    }
+
+    @Override
     public void deletePerson(Person target) {
         addressBook.removePerson(target);
     }
@@ -101,6 +108,12 @@ public class ModelManager implements Model {
     @Override
     public void addPerson(Person person) {
         addressBook.addPerson(person);
+        updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
+    }
+
+    @Override
+    public void addOwner(Owner person) {
+        addressBook.addOwner(person);
         updateFilteredPersonList(PREDICATE_SHOW_ALL_PERSONS);
     }
 
