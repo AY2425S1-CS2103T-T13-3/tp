@@ -325,7 +325,8 @@ _{Explain here how the data archiving feature will be implemented}_
 * **Skills & Preferences**:
     * Prefers desktop applications to web or mobile apps.
     * Comfortable with fast typing and more inclined toward keyboard-centric workflows.
-    * Prefers typing commands over using a mouse for navigation and interaction, reducing time spent on manual GUI tasks.
+    * Prefers typing commands over using a mouse for navigation and interaction, reducing time spent on manual GUI
+      tasks.
     * Familiar with using CLI apps, or open to adopting them given their efficiency and speed.
 
 * **Pain Points**:
@@ -339,23 +340,23 @@ _{Explain here how the data archiving feature will be implemented}_
 
 Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unlikely to have) - `*`
 
-| Priority | As a …​       | I want to …​                                     | So that I can…​                                        |
-|----------|---------------|--------------------------------------------------|--------------------------------------------------------|
-| `* * *`  | veterinarian  | create and store profiles for pet owners         | quickly access their information                       |
-| `* * *`  | veterinarian  | create and store profiles for pets               | quickly access their information                       |
-| `* * *`  | veterinarian  | search for pet owners by key details             | quickly find the information I need                    |
-| `* * *`  | veterinarian  | search for pets by key details                   | quickly find the information I need                    |
-| `* * *`  | veterinarian  | list all pet owners and pets                     | quickly access and review my client base               |
-| `* * *`  | veterinarian  | delete profiles for pet owners and pets          | keep my records up to date                             |
-| `* * *`  | veterinarian  | exit PawPatrol                                   | save my data and close my session safely               |
-| `* *`    | veterinarian  | link each pet owner to their pet(s)              | easily manage owners and their associated pet(s)       |
-| `* *`    | veterinarian  | edit profiles for pet owners                     | update profile information and ensure accurate records |
-| `* *`    | veterinarian  | edit profiles for pets                           | update profile information and ensure accurate records |
-| `* *`    | veterinarian  | clear all pet owners' and pets' profiles         | reset the system by removing all records at once       |
-| `* *`    | veterinarian  | view all the commands available to me            | utilize PawPatrols features effectively                |
-| `*`      | veterinarian  | log the vaccination schedule for each pet        | track when each pet's next vaccine is due              |
-| `*`      | veterinarian  | filter for clients with overdue vaccinations     | prioritize these clients for follow-up actions         |
-| `*`      | veterinarian  | view and track payments and outstanding balances | manage clinic revenue and follow up on unpaid invoices |
+| Priority | As a …​      | I want to …​                                     | So that I can…​                                        |
+|----------|--------------|--------------------------------------------------|--------------------------------------------------------|
+| `* * *`  | veterinarian | create and store profiles for pet owners         | quickly access their information                       |
+| `* * *`  | veterinarian | create and store profiles for pets               | quickly access their information                       |
+| `* * *`  | veterinarian | search for pet owners by key details             | quickly find the information I need                    |
+| `* * *`  | veterinarian | search for pets by key details                   | quickly find the information I need                    |
+| `* * *`  | veterinarian | list all pet owners and pets                     | quickly access and review my client base               |
+| `* * *`  | veterinarian | delete profiles for pet owners and pets          | keep my records up to date                             |
+| `* * *`  | veterinarian | exit PawPatrol                                   | save my data and close my session safely               |
+| `* *`    | veterinarian | link each pet owner to their pet(s)              | easily manage owners and their associated pet(s)       |
+| `* *`    | veterinarian | edit profiles for pet owners                     | update profile information and ensure accurate records |
+| `* *`    | veterinarian | edit profiles for pets                           | update profile information and ensure accurate records |
+| `* *`    | veterinarian | clear all pet owners' and pets' profiles         | reset the system by removing all records at once       |
+| `* *`    | veterinarian | view all the commands available to me            | utilize PawPatrols features effectively                |
+| `*`      | veterinarian | log the vaccination schedule for each pet        | track when each pet's next vaccine is due              |
+| `*`      | veterinarian | filter for clients with overdue vaccinations     | prioritize these clients for follow-up actions         |
+| `*`      | veterinarian | view and track payments and outstanding balances | manage clinic revenue and follow up on unpaid invoices |
 
 *{More to be added}*
 
@@ -363,20 +364,19 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 (For all use cases below, the **System** is the `PawPatrol` and the **Actor** is the `user`, unless specified otherwise)
 
-
 **Use case: Add a pet owner**
 
-**MSS**  
+**MSS**
 
-1.  User requests to add a new pet owner by providing the owner's name, contact number, address, and email.  
-2.  PawPatrol validates input.  
-3.  PawPatrol successfully adds the new pet owner to the list.  
+1. User requests to add a new pet owner by providing the owner's name, contact number, address, and email.
+2. PawPatrol validates input.
+3. PawPatrol successfully adds the new pet owner to the list.
 
-    Use case ends.  
+   Use case ends.
 
-**Extensions**  
+**Extensions**
 
-* 2a. Invalid owner name format.  
+* 2a. Invalid owner name format.
 
     * 2a1. PawPatrol shows an error message:
 
@@ -390,25 +390,25 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 2c. Owner name exceeds 50 characters.
 
-    * 2c1. PawPatrol shows an error message:  
+    * 2c1. PawPatrol shows an error message:
 
       Use case resumes at step 1.
 
 * 2d. Owner address exceeds 100 characters.
 
-    * 2d1. PawPatrol shows an error message:  
+    * 2d1. PawPatrol shows an error message:
 
       Use case resumes at step 1.
 
 * 2e. Owner email exceeds 50 characters.
 
-    * 2e1. PawPatrol shows an error message:  
+    * 2e1. PawPatrol shows an error message:
 
       Use case resumes at step 1.
 
 * **2f. Duplicate owner number or address.**
 
-    * 2f1. PawPatrol shows an error message:  
+    * 2f1. PawPatrol shows an error message:
 
       Use case resumes at step 1.
 
@@ -416,12 +416,12 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **MSS**
 
-1.  User keys in "delete PET" followed by a particular attribute such as name or species
-2.  PawPatrol shows the list of pets that match the searched attribute
-3.  User requests to delete a specific pet by keying in index
-4.  PawPatrol deletes the pet
+1. User keys in "delete PET" followed by a particular attribute such as name or species
+2. PawPatrol shows the list of pets that match the searched attribute
+3. User requests to delete a specific pet by keying in index
+4. PawPatrol deletes the pet
 
-    Use case ends.
+   Use case ends.
 
 **Extensions**
 
@@ -448,27 +448,27 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 **Extensions**
 
-* 2a. Invalid data type.  
+* 2a. Invalid data type.
 
-    * 2a1. PawPatrol shows an error message:  
-      
-      Use case resumes at step 1.  
+    * 2a1. PawPatrol shows an error message:
 
-* 2b. No matching contacts found.  
-
-    * 2b1. PawPatrol shows an error message:  
-      
-      Use case resumes at step 1.  
-
-* 2c. Empty search value.  
-
-    * 2c1. PawPatrol shows an error message:  
-      
       Use case resumes at step 1.
 
-* 2d. Invalid characters in search value.  
+* 2b. No matching contacts found.
 
-    * 2d1. PawPatrol shows an error message:  
+    * 2b1. PawPatrol shows an error message:
+
+      Use case resumes at step 1.
+
+* 2c. Empty search value.
+
+    * 2c1. PawPatrol shows an error message:
+
+      Use case resumes at step 1.
+
+* 2d. Invalid characters in search value.
+
+    * 2d1. PawPatrol shows an error message:
 
       Use case resumes at step 1.
 
@@ -491,10 +491,12 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 * **Mainstream OS**: Windows, Linux, Unix, MacOS
 * **Pet Owners**: An individual who has registered their pet with the veterinary clinic for treatment or checkups
 * **Private contact detail**: A contact detail that is not meant to be shared with others
-* **Profile**: A detailed record containing information about a pet or pet owner, including the owner's name and contact details, as well as the pet's name, species, breed, age, and sex
+* **Profile**: A detailed record containing information about a pet or pet owner, including the owner's name and contact
+  details, as well as the pet's name, species, breed, age, and sex
 * **Veterinarian**: A licensed medical professional who provides care and treatment to animals
 * **Vaccination**: The administration of a vaccine to a pet to stimulate an immune response against specific diseases
-* **Workflow**: The sequence of processes involved in providing veterinary care, including appointment scheduling, examination, treatment, and follow-up
+* **Workflow**: The sequence of processes involved in providing veterinary care, including appointment scheduling,
+  examination, treatment, and follow-up
 
 --------------------------------------------------------------------------------------------------------------------
 

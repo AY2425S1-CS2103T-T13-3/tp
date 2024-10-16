@@ -1,19 +1,25 @@
 [![CI Status](https://github.com/se-edu/addressbook-level3/workflows/Java%20CI/badge.svg)](https://github.com/se-edu/addressbook-level3/actions) [![codecov](https://codecov.io/gh/AY2425S1-CS2103T-T13-3/tp/graph/badge.svg?token=L39TRCVDDB)](https://codecov.io/gh/AY2425S1-CS2103T-T13-3/tp)
+
 # PawPatrol: Veterinary Address Book and Patient Management System
+
 ![Ui](docs/images/Ui.png)  
-PawPatrol is designed to be a core tool for veterinary clinics to manage client and patient data efficiently. Its primary function is as an address book for pet owners, with extensions to handle detailed patient records for animals. The goal is to provide a lightweight but scalable system for veterinarians to track essential information, including medical history, appointments, and billing.
+PawPatrol is designed to be a core tool for veterinary clinics to manage client and patient data efficiently. Its
+primary function is as an address book for pet owners, with extensions to handle detailed patient records for animals.
+The goal is to provide a lightweight but scalable system for veterinarians to track essential information, including
+medical history, appointments, and billing.
 
 ## Key Features
 
 ### Core Features
+
 - **Pet Owner Contact Management**
-  - Profiles: Capture basic owner info—name, contact details, address. Owners are linked to one or more pets.
+    - Profiles: Capture basic owner info—name, contact details, address. Owners are linked to one or more pets.
 
 - **Animal Patient Records**
-  - Profile for Each Pet: Store relevant details—name, species, breed, age, weight.
+    - Profile for Each Pet: Store relevant details—name, species, breed, age, weight.
 
 - **Search Functionality**
-  - Ability to search clients or pets by name, species, or other key data points.
+    - Ability to search clients or pets by name, species, or other key data points.
 
 ## Technologies Used
 
@@ -29,6 +35,7 @@ To install and run PawPatrol, follow these steps:
 TO BE UPDATED
 
 ## How to Use the Project
+
 1. Add a new pet owner: `owner add <n/ownerName> <hp/ownerNumber> <ad/ownerAddress> <e/ownerEmail>`  
    Example:  
    ```owner add n/mr bobby hp/96667899 ad/3 lentil gardens e/bobby@gmail.com```
@@ -50,7 +57,9 @@ TO BE UPDATED
    ```list CLIENT```
 
 ## Contributors
+
 This project was done by Aaron, Jordan, Clarissa, David and Jonathan.
 
 ## Acknowledgements
+
 This project is based on the AddressBook-Level3 project created by the [SE-EDU initiative](https://se-education.org).
