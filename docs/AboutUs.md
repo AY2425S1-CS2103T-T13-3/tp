@@ -28,7 +28,7 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[portfolio](team/johndoe.md)]
 
 - Role: Team Lead
-- Responsibilities: In charge of Search
+- Responsibilities: In Charge of Find
 
 ### David Goh
 
@@ -37,17 +37,17 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[github](https://github.com/daivdgohzk)] [[portfolio](team/johndoe.md)]
 
 - Role: Documentation and Code Quality
-- Responsibilities: Co-incharge of Pet Owner
+- Responsibilities: In Charge of Owner
 
 ### Jonathan Loh
 
 <img src="images/jloh02.png" width="200px">
 
 [[github](https://github.com/jloh02)]
-[[portfolio](team/johndoe.md)]
+[[portfolio](team/jloh02.md)]
 
 - Role: Integration
-- Responsibilities: In Charge of Pet Owner
+- Responsibilities: In Charge of Link/Unlink
 
 ### Jordan Chan
 
